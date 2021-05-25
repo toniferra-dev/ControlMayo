@@ -10,11 +10,40 @@
     <body>
         <!-- HEADER -->
         <header>
-            <img src="" alt="" />
+            <img src="./img/smartphone/logo.svg" alt="" />
             <nav class="menu"></nav>
         </header>
         <!-- MAIN -->
-        <main></main>
+        <main>
+            <section class="banner">
+                <!-- Banner Smartphone & Desktop -->
+                <picture>
+                    <!-- Mobile First -->
+                    <source
+                        srcset="
+                            ./img/smartphone/banner.jpg    1x,
+                            ./img/smartphone/banner@2x.jpg 2x,
+                            ./img/smartphone/banner@3x.jpg 3x
+                        "
+                        media="(min-width:320px) and (orientation:portrait)"
+                    />
+                    <!-- Desktop -->
+                    <source
+                        srcset="
+                            ./img/desktop/banner.jpg    1x,
+                            ./img/desktop/banner@2x.jpg 2x,
+                            ./img/desktop/banner@3x.jpg 3x
+                        "
+                        media="(min-width:1000px)"
+                    />
+                    <img src="" alt="monopatin urbano" />
+                </picture>
+            </section>
+            <section class="info">
+                <!-- información -->
+                
+            </section>
+        </main>
         <!-- FOOTER -->
         <footer>
             <h6 class="copy">&copy;Copyright</h6>

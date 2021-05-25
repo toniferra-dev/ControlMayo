@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* **************************** */
+/* IMPORTAR PARCIALES PARA COMPILAR */
+/* **************************** */
+/* @RESET */
+/* ********** */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* @VARIABLES */
+/* ********** */
+/* @TIPOGRAFÍA */
+/* ********** */
+@font-face {
+  font-family: "";
+  src: url(../../font/.woff2) format("woff2"), url(../../font/.woff) format("woff");
+}
+
+html {
+  font-size: 16px;
+  font-family: "", sans-serif;
+  color: #3A3A3A;
+}
+
+.titulo {
+  color: red;
+}
+
+/* @MIXIN */
+/* ********** */
+/* @BOTONES */
+/* ********** */
+.btn {
+  padding: .9375rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btnamarillo {
+  color: #3A3A3A;
+}
+
+/* @COVER_BANNER */
+/* ********** */
+.banner {
+  grid-column: 1 / span-1;
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .banner {
+    grid-column: 2 / span 6;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .banner {
+    display: none;
+  }
+}
+
+/* @GRIDS */
+/* ********** */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  .contenedor {
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .contenedor {
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .contenedor {
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+  }
+}
+
+/* @FORMULARIOS */
+/* ********** */
+.formContactar {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.formContactar__titulo {
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.formContactar input {
+  padding: 15px;
+  border: 2px solid #3A3A3A;
+}
+
+.formContactar__enviar {
+  padding: 15px;
+  color: #3A3A3A;
+}
+
+::placeholder {
+  color: #3A3A3A;
+}
+
+/* @NAVEGACIÓN */
+/* ********** */
+.menuPrincipal {
+  background-color: #3A3A3A;
+  width: 100vw;
+  height: calc(100vh - 55px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menuPrincipal a {
+  text-decoration: uppercase;
+  font-size: 1.5rem;
+  padding: .6875rem;
+}
+
+.redes a {
+  color: #F5F5F5;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.redes__titulo {
+  color: #F5F5F5;
+  font-size: 1.125rem;
+  font-family: "", sans-serif;
+}
+
+/* @HOME */
+/* ********** */
+/* @CONTACTAR */
+/* ********** */
+/*# sourceMappingURL=main.css.map */
